@@ -1,0 +1,51 @@
+header,
+.about,
+.skills,
+.projects,
+.contact {
+    padding: 50px 0;
+}
+
+header {
+    background-color: $brown;
+    h1 {
+        color: $orange;
+    }
+    h3 {
+        color: $tan;
+    }
+}
+
+.about,
+.projects {
+    background-color: $tan;
+    h2,
+    h3,
+    h4,
+    p {
+        color: $brown;
+    }
+}
+
+.skills,
+.contact {
+    background-color: $grey;
+    h2 {
+        color: $violet;
+    }
+}
+
+i {
+    color: $violet;
+    font-size: 5rem;
+    margin: 5px;
+}
+
+footer {
+    background-color: $brown;
+    p {
+        color: $tan;
+        padding: 25px 0;
+    }
+}
+

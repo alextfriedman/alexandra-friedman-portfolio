@@ -263,6 +263,7 @@ html {
 body {
   text-align: center;
   font-size: 125%;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 .wrapper {
@@ -273,8 +274,10 @@ body {
 
 a {
   text-decoration: none;
-  color: inherit;
   cursor: pointer;
+  padding: 10px 20px;
+  background-color: #EC5B39;
+  color: white;
 }
 
 img {
@@ -283,10 +286,75 @@ img {
   display: block;
 }
 
-h1,
 h2 {
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
   font-family: "Coustard", serif;
   font-weight: 900;
+}
+
+h3 {
+  font-weight: 400;
+}
+
+header,
+.about,
+.skills,
+.projects,
+.contact {
+  padding: 50px 0;
+}
+
+header {
+  background-color: #463a2d;
+}
+header h1 {
+  color: #EC5B39;
+}
+header h3 {
+  color: #DCD2C4;
+}
+
+.about,
+.projects {
+  background-color: #DCD2C4;
+}
+.about h2,
+.about h3,
+.about h4,
+.about p,
+.projects h2,
+.projects h3,
+.projects h4,
+.projects p {
+  color: #463a2d;
+}
+
+.skills,
+.contact {
+  background-color: #626380;
+}
+.skills h2,
+.contact h2 {
+  color: #fba6ff;
+}
+
+i {
+  color: #fba6ff;
+  font-size: 5rem;
+  margin: 5px;
+}
+
+footer {
+  background-color: #463a2d;
+}
+footer p {
+  color: #DCD2C4;
+  padding: 25px 0;
 }
 
 .skip-link {
@@ -306,4 +374,13 @@ ul {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+ul a {
+  background-color: #463a2d;
+  color: #DCD2C4;
+  font-size: 0.9rem;
+  font-weight: 600;
 }
