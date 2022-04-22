@@ -16,9 +16,11 @@ ul {
     margin: 0;
     padding: 0;
     display: flex;
+    justify-content: center;
     a {
-        background-color: $brown;
-        color: $tan;
+        border: 2px solid cyan;
+        background-color: $tan;
+        color: $brown;
         font-size: 0.9rem;
         font-weight: 600;
     }

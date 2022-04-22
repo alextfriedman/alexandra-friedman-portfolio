@@ -13,19 +13,27 @@ body {
 a {
     text-decoration: none;
     cursor: pointer;
+}
+
+header a,
+.projects a {
     padding: 10px 20px;
     background-color: $orange;
     color: white;
 }
 
+
 img {
     max-width: 100%;
     height: auto;
     display: block;
+    margin: 0 auto;
+    // border: 2px solid red;
 }
 
 h2 {
     margin: 0;
+    font-size: 2.5rem;
 }
 
 h1,
@@ -37,4 +45,17 @@ h3 {
 
 h3 {
     font-weight: 400;
+}
+
+h4 {
+    font-size: .8rem;
+}
+
+p {
+    line-height: 1.5rem;
+}
+
+hr {
+    margin: 30px 15px 15px;
+    color: rgba(70, 58, 45, 0.2);
 }

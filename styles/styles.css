@@ -275,6 +275,10 @@ body {
 a {
   text-decoration: none;
   cursor: pointer;
+}
+
+header a,
+.projects a {
   padding: 10px 20px;
   background-color: #EC5B39;
   color: white;
@@ -284,10 +288,12 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
+  margin: 0 auto;
 }
 
 h2 {
   margin: 0;
+  font-size: 2.5rem;
 }
 
 h1,
@@ -301,6 +307,19 @@ h3 {
   font-weight: 400;
 }
 
+h4 {
+  font-size: 0.8rem;
+}
+
+p {
+  line-height: 1.5rem;
+}
+
+hr {
+  margin: 30px 15px 15px;
+  color: rgba(70, 58, 45, 0.2);
+}
+
 header,
 .about,
 .skills,
@@ -310,23 +329,24 @@ header,
 }
 
 header {
-  background-color: #463a2d;
+  background-color: #f5eadc;
 }
 header h1 {
   color: #EC5B39;
+  font-size: 3rem;
 }
 header h3 {
-  color: #DCD2C4;
+  color: #463a2d;
 }
 
-.about,
-.projects {
-  background-color: #DCD2C4;
+.about {
+  background-color: #463a2d;
+  color: #f5eadc;
 }
-.about h2,
-.about h3,
-.about h4,
-.about p,
+
+.projects {
+  background-color: #f5eadc;
+}
 .projects h2,
 .projects h3,
 .projects h4,
@@ -341,11 +361,48 @@ header h3 {
 .skills h2,
 .contact h2 {
   color: #fba6ff;
+  margin-bottom: 20px;
+}
+
+.icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.icons .iconContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 5px 10px;
+}
+.icons .iconContainer i {
+  margin: 0;
+}
+.icons .iconContainer p {
+  margin: 0;
+  font-size: 0.8rem;
+  color: #fba6ff;
+  text-transform: uppercase;
+}
+
+.contact p {
+  color: #fba6ff;
 }
 
 i {
   color: #fba6ff;
-  font-size: 5rem;
+  font-size: 4.5rem;
   margin: 5px;
 }
 
@@ -353,8 +410,11 @@ footer {
   background-color: #463a2d;
 }
 footer p {
-  color: #DCD2C4;
+  color: #f5eadc;
   padding: 25px 0;
+}
+footer .heart {
+  color: #EC5B39;
 }
 
 .skip-link {
@@ -377,10 +437,14 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 ul a {
-  background-color: #463a2d;
-  color: #DCD2C4;
+  border: 2px solid cyan;
+  background-color: #f5eadc;
+  color: #463a2d;
   font-size: 0.9rem;
   font-weight: 600;
 }
