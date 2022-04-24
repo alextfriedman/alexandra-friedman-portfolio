@@ -315,6 +315,7 @@ h3 {
 }
 
 h3 {
+  font-size: 1.6rem;
   font-weight: 400;
 }
 
@@ -323,6 +324,7 @@ h4 {
 }
 
 p {
+  font-size: 1.3rem;
   line-height: 1.5rem;
 }
 
@@ -659,5 +661,10 @@ ul a {
 
   .about img {
     margin-bottom: 25px;
+  }
+}
+@media (min-width: 950px) {
+  header h1 {
+    font-size: 4rem;
   }
 }
