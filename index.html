@@ -17,16 +17,26 @@
     <header>
         <div class="wrapper">
             <nav>
-                <ul>
+                <button class="hamburger">
+                    <i class="fa-solid fa-bars"></i>
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <ul class="main-menu">
                     <li><a href="#">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
+                <ul class="sliding-menu">
+                    <li><a class="menu-item" href="#">Home</a></li>
+                    <li><a class="menu-item" href="#about">About</a></li>
+                    <li><a class="menu-item" href="#projects">Projects</a></li>
+                    <li><a class="menu-item" href="#contact">Contact</a></li>
+                </ul>
             </nav>
             <h1>Alexandra Friedman</h1>
             <h3>Front-End Web Developer</h3>
-            <a href="#contact">Get in Touch</a>
+            <a class="contact-button" href="#contact">Get in Touch</a>
         </div>
     </header>
 
@@ -128,7 +138,7 @@
                     <div class="infoContainer">
                         <h3>Beachstays</h3>
                         <h4>HTML, CSS</h4>
-                        <p>A responsive multi-page PSD conversion of a beach vacation website. Your next getaway is calling.</p>
+                        <p>Your next getaway is calling. A responsive multi-page PSD conversion of a beach vacation website. Includes a home page, blog page, and contact page.</p>
                         <a href="https://sweet-sprite-377d99.netlify.app/index.html">View Live</a>
                         <a href="https://github.com/alextfriedman/alexandra-friedman-project-one">View Code</a>
                     </div>
@@ -139,8 +149,8 @@
         <div class="contact" id="contact">
             <div class="wrapper">
                 <h2>Get in Touch</h2>
-                <p>Send me an email at alextfriedman[at]gmail.com <br>or reach out on LinkedIn!</p>
-                <a href="https://www.linkedin.com/in/alexandra-friedman-dev/" class="linkedin"><i class="fa-brands fa-linkedin"></i></a>
+                <p>Want to work together?<br>Send me a message at alextfriedman[at]gmail.com <br>or reach out on LinkedIn!</p>
+                <a href="https://www.linkedin.com/in/alexandra-friedman-dev/" class="linkedin"><i class="fab fa-linkedin"></i></a>
                 <!-- <a href="https://github.com/alextfriedman" class="github"><i class="fa-brands fa-github"></i></a> -->
             </div>
         </div> <!-- contact END -->
@@ -151,5 +161,6 @@
             </p>
         </footer>
     </main>
+    <script src="./script.js"></script>
 </body>
 </html>

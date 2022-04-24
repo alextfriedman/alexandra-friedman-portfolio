@@ -14,12 +14,23 @@ header {
     }
     h3 {
         color: $brown;
+        margin-bottom: 40px;
     }
 }
 
 .about {
     background-color: $brown;
     color: $tan;
+    img {
+        border-radius: 10px;
+        margin-bottom: 45px;
+        box-shadow: rgba(236, 91, 57, 0.6) -5px 5px,
+        rgba(236, 91, 57, 0.5) -10px 10px,
+        rgba(236, 91, 57, 0.4) -15px 15px,
+        rgba(236, 91, 57, 0.3) -20px 20px,
+        rgba(236, 91, 57, 0.2) -25px 25px;
+        transition-duration: 0.7s;
+    }
 }
 
 .projects {
@@ -29,6 +40,12 @@ header {
     h4,
     p {
         color: $brown;
+    }
+    .imgContainer {
+        margin-top: 25px;
+    }
+    p {
+        margin-bottom: 25px;
     }
 }
 
@@ -46,17 +63,14 @@ header {
     justify-content: space-around;
     flex-wrap: wrap;
     .iconContainer {
-        // border: 2px solid yellow;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         margin: 5px 10px;
         i {
-            // border: 2px solid cyan;
             margin: 0;
         }
         p {
-            // border: 2px solid orange;
             margin: 0;
             font-size: .8rem;
             color: $violet;
@@ -65,21 +79,51 @@ header {
     }
 }
 
-.contact p {
-    color: $violet;
-}
-
 i {
     color: $violet;
     font-size: 4.5rem;
     margin: 5px;
 }
 
+.contact p {
+    color: $violet;
+}
+
+.linkedin i {
+    font-size: 3.5rem;
+}
+
+.linkedin i:hover {
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    20% {
+        transform: scale(1);
+    }
+    40% {
+        transform: scale(1.1);
+    }
+    60% {
+        transform: scale(1);
+    }
+    80% {
+        transform: scale(1.07);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
 footer {
     background-color: $brown;
     p {
         color: $tan;
-        padding: 25px 0;
+        font-size: 1.1rem;
+        padding: 18px 0;
     }
     .heart {
         color: $orange;

@@ -13,13 +13,23 @@ body {
 a {
     text-decoration: none;
     cursor: pointer;
+    border-radius: 10px;
 }
 
-header a,
+.contact-button,
 .projects a {
     padding: 10px 20px;
     background-color: $orange;
     color: white;
+    transition-duration: 0.4s;
+}
+
+.contact-button:hover,
+.contact-button:focus,
+.projects a:hover,
+.projects a:focus {
+    background-color: white;
+    color: $orange;
 }
 
 
@@ -28,7 +38,7 @@ img {
     height: auto;
     display: block;
     margin: 0 auto;
-    // border: 2px solid red;
+    // border: 2px solid magenta;
 }
 
 h2 {

@@ -18,10 +18,56 @@ ul {
     display: flex;
     justify-content: center;
     a {
-        border: 2px solid cyan;
+        padding: 10px 20px;
         background-color: $tan;
         color: $brown;
-        font-size: 0.9rem;
+        font-size: 1rem;
         font-weight: 600;
     }
+}
+
+.hamburger {
+    position: fixed;
+    z-index: 100;
+    top: 1rem;
+    right: 1rem;
+    padding: 5px;
+    border: none;
+    background-color: $tan;
+    cursor: pointer;
+    i {
+        color: $brown;
+        font-size: 2.5rem;
+    }
+}
+
+.fa-xmark,
+.main-menu {
+    display: none;
+}
+
+.sliding-menu {
+    position: fixed;
+    transform: translateX(100%);
+    transition: 0.3s;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 99;
+    background-color: $brown;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 75vh;
+    a {
+        background-color: $brown;
+        color: $tan;
+        padding: 20px;
+        font-size: 2rem;
+        font-family: $headerFont;
+        font-weight: 900;
+    }
+}
+
+.show-menu {
+    transform: translateX(0);
 }

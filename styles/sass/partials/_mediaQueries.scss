@@ -1,0 +1,64 @@
+@media (min-width: 500px) {
+    .about img:hover {
+        box-shadow: rgba(236, 91, 57, 0.6) -5px 5px,
+            rgba(236, 91, 57, 0.5) -10px 10px, rgba(236, 91, 57, 0.6) -15px 15px,
+            rgba(236, 91, 57, 0.5) -20px 20px,
+            rgba(236, 91, 57, 0.4) -25px 25px,
+            rgba(236, 91, 57, 0.3) -30px 30px,
+            rgba(236, 91, 57, 0.2) -35px 35px;
+    }
+}
+
+@media (min-width: 632px) {
+    .hamburger,
+    .sliding-menu {
+        display: none;
+    }
+
+    .main-menu {
+        display: flex;
+    }
+}
+
+@media (min-width: 750px) {
+    .proj1,
+    .proj2,
+    .proj3 {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .proj1 .infoContainer,
+    .proj3 .infoContainer {
+        text-align: left;
+        padding-left: 20px;
+        max-width: 50%;
+    }
+
+    .proj2 {
+        flex-direction: row-reverse;
+        .infoContainer {
+            text-align: right;
+            padding-right: 20px;
+            max-width: 50%;
+        }
+    }
+}
+
+@media (min-width: 800px) {
+    .about .wrapper {
+        display: flex;
+        justify-content: space-between;
+        .aboutText {
+            width: 55%;
+            text-align: left;
+        }
+        .aboutImg {
+            width: 44%;
+        }
+    }
+
+    .about img {
+        margin-bottom: 25px;
+    }
+}
