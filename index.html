@@ -7,17 +7,160 @@
     <title>Alexandra Friedman</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Rock+Salt&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Coustard:wght@400;900&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/39855c5c20.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
-    <main>
-        <h1>Alexandra Friedman</h1>
-        <h2>portfolio coming soon</h2>
-        <p>🌹</p>
-        <a href="https://www.linkedin.com/in/alexandra-friedman-dev/" class="linkedin"><i class="fab fa-linkedin"></i></a>
+    <a href="#maincontent" class="skip-link">Skip to main content</a>
+    <header>
+        <div class="wrapper">
+            <nav>
+                <button class="hamburger">
+                    <i class="fa-solid fa-bars"></i>
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <ul class="main-menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <ul class="sliding-menu">
+                    <li><a class="menu-item" href="#">Home</a></li>
+                    <li><a class="menu-item" href="#about">About</a></li>
+                    <li><a class="menu-item" href="#projects">Projects</a></li>
+                    <li><a class="menu-item" href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <h1>Alexandra Friedman</h1>
+            <h3>Front-End Web Developer</h3>
+            <a class="contact-button" href="#contact">Get in Touch</a>
+        </div>
+    </header>
+
+    <main id="maincontent">
+        <div class="about" id="about">
+            <div class="wrapper">
+                <div class="aboutImg">
+                    <img src="https://placekitten.com/300/300" alt="A picture of Alexandra Friedman.">
+                </div>
+                <div class="aboutText">
+                    <h2>About Me</h2>
+                    <p>Hey there! I am a Toronto-based web developer with a background in sexual health education, e-commerce, and customer service. I have over 9 years of experience meeting the diverse needs of various clients. My passion for inclusivity & accessibility and my dedication to clear, precise communication shine through in my teamwork and in my code.</p>
+                    <p>When I'm not making the internet, I'm watching horror movies, reading about attachment theory, and eating cheese.</p>
+                </div>
+            </div>
+        </div> <!-- about END -->
+
+        <div class="skills">
+            <div class="wrapper">
+                <h2>Skills</h2>
+                <div class="icons">
+                    <div class="iconContainer">
+                        <i class="fa-brands fa-html5"></i>
+                        <p>HTML5</p>
+                    </div>
+                    <div class="iconContainer">
+                        <i class="fa-brands fa-css3-alt"></i>
+                        <p>CSS3</p>
+                    </div>
+                    <div class="iconContainer">
+                        <i class="fa-brands fa-sass"></i>
+                        <p>SASS</p>
+                    </div>
+                    <div class="iconContainer">
+                        <i class="fa-brands fa-js-square"></i>
+                        <p>ES6</p>
+                    </div>
+                    <div class="iconContainer">
+                        <i class="devicon-jquery-plain"></i>
+                        <p>jQuery</p>
+                    </div>
+                    <div class="iconContainer">
+                        <i class="fa-brands fa-react"></i>
+                        <p>React</p>
+                    </div>
+                    <div class="iconContainer">
+                        <i class="fa-brands fa-github"></i>
+                        <p>Git/Github</p>
+                    </div>
+                    <div class="iconContainer">
+                        <i class="devicon-firebase-plain"></i>
+                        <p>Firebase</p>
+                    </div>
+                    <div class="iconContainer">
+                        <i class="fa-solid fa-laptop-code"></i>
+                        <p>Responsive Web Design</p>
+                    </div>
+                    <div class="iconContainer">
+                        <i class="fa-solid fa-universal-access"></i>
+                        <p>Web Accessibility</p>
+                    </div>
+                </div> <!-- .icons END -->
+            </div>
+        </div> <!-- skills END -->
+
+        <div class="projects" id="projects">
+            <div class="wrapper">
+                <h2>Projects</h2>
+                <div class="proj1">
+                    <div class="imgContainer">
+                        <img src="./assets/horror-app.png" alt="A screenshot of my Scare Generator app.">
+                    </div>
+                    <div class="infoContainer">
+                        <h3>Scare Generator</h3>
+                        <h4>HTML, CSS, jQuery</h4>
+                        <p>In the mood for something spooky? Scare Generator is an interactive app that uses a movie API to display a random classic horror movie at the click of a button.</p>
+                        <a href="https://scare-generator.netlify.app/">View Live</a>
+                        <a href="https://github.com/alextfriedman/scare-generator">View Code</a>
+                    </div>
+                </div> <!-- proj1 END -->
+                <hr>
+                <div class="proj2">
+                    <div class="imgContainer">
+                        <img src="./assets/dog-app.png" alt="A screenshot of my Dog Encyclo-paw-dia app.">
+                    </div>
+                    <div class="infoContainer">
+                        <h3>Dog Encyclo-paw-dia</h3>
+                        <h4>HTML, CSS, Vanilla JavaScript</h4>
+                        <p>An encyclopedia of dogs! A paired programming project that uses a dog API to display information on 170+ dog breeds. Includes a randomizer button to discover a random dog breed.</p>
+                        <a href="https://dog-encyclo-paw-dia.netlify.app/">View Live</a>
+                        <a href="https://github.com/ourDogApp/DogEncyloPawDia">View Code</a>
+                    </div>
+                </div> <!-- proj2 END -->
+                <hr>
+                <div class="proj3">
+                    <div class="imgContainer">
+                        <img src="./assets/beach-site.png" alt="A screenshot of my Beachstays website PSD conversion.">
+                    </div>
+                    <div class="infoContainer">
+                        <h3>Beachstays</h3>
+                        <h4>HTML, CSS</h4>
+                        <p>Your next getaway is calling. A responsive multi-page PSD conversion of a beach vacation website. Includes a home page, blog page, and contact page.</p>
+                        <a href="https://sweet-sprite-377d99.netlify.app/index.html">View Live</a>
+                        <a href="https://github.com/alextfriedman/alexandra-friedman-project-one">View Code</a>
+                    </div>
+                </div> <!-- proj3 END -->
+            </div>
+        </div> <!-- projects END -->
+
+        <div class="contact" id="contact">
+            <div class="wrapper">
+                <h2>Get in Touch</h2>
+                <p>Want to work together?<br>Send me a message at alextfriedman[at]gmail.com <br>or reach out on LinkedIn!</p>
+                <a href="https://www.linkedin.com/in/alexandra-friedman-dev/" class="linkedin"><i class="fab fa-linkedin"></i></a>
+                <!-- <a href="https://github.com/alextfriedman" class="github"><i class="fa-brands fa-github"></i></a> -->
+            </div>
+        </div> <!-- contact END -->
+
+        <footer>
+            <p class="wrapper">
+                Built with <span class="heart">♥</span> by Alexandra Friedman
+            </p>
+        </footer>
     </main>
+    <script src="./script.js"></script>
 </body>
 </html>
