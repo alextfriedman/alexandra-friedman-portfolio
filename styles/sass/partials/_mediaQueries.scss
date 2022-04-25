@@ -1,7 +1,8 @@
 @media (min-width: 500px) {
     .about img:hover {
         box-shadow: rgba(236, 91, 57, 0.6) -5px 5px,
-            rgba(236, 91, 57, 0.5) -10px 10px, rgba(236, 91, 57, 0.6) -15px 15px,
+            rgba(236, 91, 57, 0.5) -10px 10px, 
+            rgba(236, 91, 57, 0.6) -15px 15px,
             rgba(236, 91, 57, 0.5) -20px 20px,
             rgba(236, 91, 57, 0.4) -25px 25px,
             rgba(236, 91, 57, 0.3) -30px 30px,
@@ -28,8 +29,8 @@
         justify-content: space-between;
     }
 
-    .proj1 .infoContainer,
-    .proj3 .infoContainer {
+    .proj1 .info-container,
+    .proj3 .info-container {
         text-align: left;
         padding-left: 20px;
         max-width: 50%;
@@ -37,7 +38,7 @@
 
     .proj2 {
         flex-direction: row-reverse;
-        .infoContainer {
+        .info-container {
             text-align: right;
             padding-right: 20px;
             max-width: 50%;
@@ -49,12 +50,13 @@
     .about .wrapper {
         display: flex;
         justify-content: space-between;
-        .aboutText {
-            width: 55%;
+        .about-text {
+            width: 54%;
             text-align: left;
         }
-        .aboutImg {
+        .about-img {
             width: 44%;
+            margin: 0;
         }
     }
 
@@ -66,5 +68,8 @@
 @media (min-width: 950px) {
     header h1 {
         font-size: 4rem;
+    }
+    .about .wrapper {
+        justify-content: space-around;
     }
 }

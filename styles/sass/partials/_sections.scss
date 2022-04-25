@@ -21,15 +21,19 @@ header {
 .about {
     background-color: $brown;
     color: $tan;
-    img {
-        border-radius: 10px;
-        margin-bottom: 45px;
-        box-shadow: rgba(236, 91, 57, 0.6) -5px 5px,
-        rgba(236, 91, 57, 0.5) -10px 10px,
-        rgba(236, 91, 57, 0.4) -15px 15px,
-        rgba(236, 91, 57, 0.3) -20px 20px,
-        rgba(236, 91, 57, 0.2) -25px 25px;
-        transition-duration: 0.7s;
+    .about-img {
+        max-width: 350px;
+        margin: 0 auto;
+        img {
+            border-radius: 10px;
+            margin-bottom: 45px;
+            box-shadow: rgba(236, 91, 57, 0.6) -5px 5px,
+            rgba(236, 91, 57, 0.5) -10px 10px,
+            rgba(236, 91, 57, 0.4) -15px 15px,
+            rgba(236, 91, 57, 0.3) -20px 20px,
+            rgba(236, 91, 57, 0.2) -25px 25px;
+            transition-duration: 0.7s;
+        }
     }
 }
 
@@ -41,11 +45,14 @@ header {
     p {
         color: $brown;
     }
-    .imgContainer {
+    .img-container {
         margin-top: 25px;
     }
     p {
         margin-bottom: 25px;
+    }
+    h4 {
+        text-transform: uppercase;
     }
 }
 
@@ -62,7 +69,7 @@ header {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    .iconContainer {
+    .icon-container {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
