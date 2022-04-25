@@ -357,7 +357,11 @@ header h3 {
   background-color: #463a2d;
   color: #f5eadc;
 }
-.about img {
+.about .about-img {
+  max-width: 350px;
+  margin: 0 auto;
+}
+.about .about-img img {
   border-radius: 10px;
   margin-bottom: 45px;
   -webkit-box-shadow: rgba(236, 91, 57, 0.6) -5px 5px, rgba(236, 91, 57, 0.5) -10px 10px, rgba(236, 91, 57, 0.4) -15px 15px, rgba(236, 91, 57, 0.3) -20px 20px, rgba(236, 91, 57, 0.2) -25px 25px;
@@ -375,11 +379,14 @@ header h3 {
 .projects p {
   color: #463a2d;
 }
-.projects .imgContainer {
+.projects .img-container {
   margin-top: 25px;
 }
 .projects p {
   margin-bottom: 25px;
+}
+.projects h4 {
+  text-transform: uppercase;
 }
 
 .skills,
@@ -401,7 +408,7 @@ header h3 {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-.icons .iconContainer {
+.icons .icon-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -414,10 +421,10 @@ header h3 {
           justify-content: space-between;
   margin: 5px 10px;
 }
-.icons .iconContainer i {
+.icons .icon-container i {
   margin: 0;
 }
-.icons .iconContainer p {
+.icons .icon-container p {
   margin: 0;
   font-size: 0.8rem;
   color: #fba6ff;
@@ -623,8 +630,8 @@ ul a {
             justify-content: space-between;
   }
 
-  .proj1 .infoContainer,
-.proj3 .infoContainer {
+  .proj1 .info-container,
+.proj3 .info-container {
     text-align: left;
     padding-left: 20px;
     max-width: 50%;
@@ -636,7 +643,7 @@ ul a {
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
   }
-  .proj2 .infoContainer {
+  .proj2 .info-container {
     text-align: right;
     padding-right: 20px;
     max-width: 50%;
@@ -651,12 +658,13 @@ ul a {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .about .wrapper .aboutText {
-    width: 55%;
+  .about .wrapper .about-text {
+    width: 54%;
     text-align: left;
   }
-  .about .wrapper .aboutImg {
+  .about .wrapper .about-img {
     width: 44%;
+    margin: 0;
   }
 
   .about img {
@@ -666,5 +674,10 @@ ul a {
 @media (min-width: 950px) {
   header h1 {
     font-size: 4rem;
+  }
+
+  .about .wrapper {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
