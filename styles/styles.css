@@ -338,7 +338,7 @@ header,
 .skills,
 .projects,
 .contact {
-  padding: 50px 0;
+  padding: 50px 20px;
 }
 
 header {
@@ -439,10 +439,11 @@ i {
 
 .contact p {
   color: #fba6ff;
+  margin: 10px;
 }
 
 .linkedin i {
-  font-size: 3.5rem;
+  font-size: 3rem;
 }
 
 .linkedin i:hover {
@@ -503,6 +504,47 @@ i {
             transform: scale(1);
   }
 }
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
+}
+form label {
+  text-align: left;
+  color: #fba6ff;
+  text-transform: uppercase;
+  font-size: 1rem;
+  margin: 10px 0;
+  font-weight: 600;
+}
+form input,
+form textarea {
+  border: none;
+  background-color: white;
+  padding: 5px;
+}
+form textarea {
+  resize: none;
+}
+form button {
+  width: 30%;
+  padding: 5px 0;
+  border: none;
+  cursor: pointer;
+  background-color: #fba6ff;
+  color: #626380;
+  margin: 15px auto 0;
+  text-transform: lowercase;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
 footer {
   background-color: #463a2d;
 }
