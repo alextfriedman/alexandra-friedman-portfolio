@@ -279,7 +279,7 @@ a {
 }
 
 .contact-button,
-.projects a {
+.info-container a {
   padding: 10px 20px;
   background-color: #ec5b39;
   color: white;
@@ -325,11 +325,11 @@ h4 {
 
 p {
   font-size: 1.3rem;
-  line-height: 1.5rem;
+  line-height: 1.8rem;
 }
 
 hr {
-  margin: 30px 15px 15px;
+  margin: 60px 15px 40px;
   color: rgba(70, 58, 45, 0.2);
 }
 
@@ -338,7 +338,7 @@ header,
 .skills,
 .projects,
 .contact {
-  padding: 50px 20px;
+  padding: 80px 20px;
 }
 
 header {
@@ -359,7 +359,7 @@ header h3 {
 }
 .about .about-img {
   max-width: 350px;
-  margin: 0 auto;
+  margin: auto;
 }
 .about .about-img img {
   border-radius: 10px;
@@ -368,6 +368,9 @@ header h3 {
           box-shadow: rgba(236, 91, 57, 0.6) -5px 5px, rgba(236, 91, 57, 0.5) -10px 10px, rgba(236, 91, 57, 0.4) -15px 15px, rgba(236, 91, 57, 0.3) -20px 20px, rgba(236, 91, 57, 0.2) -25px 25px;
   -webkit-transition-duration: 0.7s;
           transition-duration: 0.7s;
+}
+.about .about-text {
+  margin: auto 0;
 }
 
 .projects {
@@ -442,11 +445,13 @@ i {
   margin: 10px;
 }
 
-.linkedin i {
-  font-size: 3rem;
+.linkedin i,
+.github i {
+  font-size: 2.5rem;
 }
 
-.linkedin i:hover {
+.linkedin i:hover,
+.github i:hover {
   -webkit-animation: pulse 1s infinite;
           animation: pulse 1s infinite;
 }
@@ -672,11 +677,15 @@ ul a {
             justify-content: space-between;
   }
 
+  .info-container {
+    max-width: 50%;
+    margin: auto 0;
+  }
+
   .proj1 .info-container,
 .proj3 .info-container {
     text-align: left;
     padding-left: 20px;
-    max-width: 50%;
   }
 
   .proj2 {
@@ -688,7 +697,6 @@ ul a {
   .proj2 .info-container {
     text-align: right;
     padding-right: 20px;
-    max-width: 50%;
   }
 }
 @media (min-width: 800px) {
