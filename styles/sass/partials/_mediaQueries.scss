@@ -24,7 +24,8 @@
 @media (min-width: 750px) {
     .proj1,
     .proj2,
-    .proj3 {
+    .proj3,
+    .proj4 {
         display: flex;
         justify-content: space-between;
     }
@@ -40,7 +41,8 @@
         padding-left: 20px;
     }
 
-    .proj2 {
+    .proj2,
+    .proj4 {
         flex-direction: row-reverse;
         .info-container {
             text-align: right;
