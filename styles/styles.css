@@ -260,6 +260,10 @@ html {
   overflow: hidden;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   text-align: center;
   font-size: 125%;
@@ -446,12 +450,14 @@ i {
 }
 
 .linkedin i,
-.github i {
+.github i,
+.email i {
   font-size: 2.5rem;
 }
 
 .linkedin i:hover,
-.github i:hover {
+.github i:hover,
+.email i:hover {
   -webkit-animation: pulse 1s infinite;
           animation: pulse 1s infinite;
 }
