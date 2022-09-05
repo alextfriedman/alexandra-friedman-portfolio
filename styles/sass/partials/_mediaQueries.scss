@@ -25,7 +25,8 @@
     .proj1,
     .proj2,
     .proj3,
-    .proj4 {
+    .proj4,
+    .proj5 {
         display: flex;
         justify-content: space-between;
     }
@@ -36,7 +37,8 @@
     }
 
     .proj1 .info-container,
-    .proj3 .info-container {
+    .proj3 .info-container,
+    .proj5 .info-container {
         text-align: left;
         padding-left: 20px;
     }

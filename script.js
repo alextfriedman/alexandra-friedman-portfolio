@@ -1,3 +1,4 @@
+// Slideout menu
 // Adapted code from https://dev.to/ljcdev/easy-hamburger-menu-with-js-2do0
 
 const menu = document.querySelector(".sliding-menu");
@@ -36,7 +37,7 @@ const reveal = () => {
     for (let i = 0; i < reveals.length; i++) {
         const windowHeight = window.innerHeight;
         const elementTop = reveals[i].getBoundingClientRect().top;
-        const elementVisible = 150;
+        const elementVisible = 10;
         if (elementTop < windowHeight - elementVisible) {
             reveals[i].classList.add("active");
         } else {
